@@ -1,0 +1,155 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", sans-serif;
+}
+body {
+  background: lightgrey;
+}
+.container {
+  margin: 20px auto;
+  display: block;
+  max-width: 550px;
+}
+.main {
+  background: #6943ff;
+  max-width: 550px;
+  display: flex;
+  flex-direction: column;
+}
+.main h1 {
+  color: white;
+  font-size: 24px;
+  text-align: center;
+  font-weight: 800;
+  padding: 35px 50px;
+}
+.main .input {
+  font-size: 58px;
+  color: white;
+  border: 1px solid #b295ff;
+  border-radius: 5px;
+  width: 117px;
+  font-weight: 800;
+  text-align: center;
+  background-color: #6943ff;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 25px;
+}
+.convert-btn {
+  font-size: 16px;
+  display: block;
+  margin: 0 auto;
+  border-radius: 5px;
+  padding: 9px 27px;
+  width: 117px;
+  border: none;
+  background-color: white;
+  color: #3d3d3d;
+  margin-bottom: 30px;
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.05);
+}
+.convert-btn:hover {
+  cursor: pointer;
+}
+.console {
+  background: #f4f4f4;
+  max-width: 550px;
+  text-align: center;
+  padding: 20px;
+}
+.console div {
+  background: white;
+  max-width: 500px;
+  height: 100px;
+  border-radius: 4px;
+  top: 30px;
+  margin-bottom: 15px;
+}
+.console div h3 {
+  color: #5a537b;
+  padding-top: 25px;
+  padding-bottom: 10px;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 20px;
+}
+
+.console div p {
+  color: #353535;
+  font-size: 14px;
+  font-weight: 400px;
+  line-height: 20px;
+}
+footer {
+  margin: 40px auto;
+
+  color: #f4f4f4;
+  text-align: center;
+}
+footer a {
+  text-decoration: none;
+  color: #b295ff;
+  transition: all 200ms ease-in-out;
+}
+footer a:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+.toggle {
+  margin: 10px auto;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.toggle-text {
+  font-size: 18px;
+  color: white;
+}
+
+.toggle-btn {
+  height: 20px;
+  width: 40px;
+  background-color: #5a537b;
+  border-radius: 30px;
+  padding: 5px;
+  margin: 0 10px;
+}
+
+.inner-circle {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: white;
+  transition: all 250ms ease-in-out;
+}
+.toggle-btn.toggled > .inner-circle {
+  transform: translateX(20px);
+  background-color: #333;
+}
+
+.unselected {
+  opacity: 0.25;
+}
+
+.dark .console div {
+  background-color: #273549;
+  transition: all 200ms ease-in-out;
+}
+.dark .console {
+  background-color: #1f2937;
+  transition: all 200ms ease-in-out;
+}
+body.dark {
+  background-color: #5a537b;
+  transition: all 200ms ease-in-out;
+}
+.dark .console div h3 {
+  color: #f4f4f4;
+}
+.dark .console div p {
+  color: lightgray;
+}
