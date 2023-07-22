@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Metric/Imperial Unit Conversion</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <script
+      src="https://kit.fontawesome.com/758ed9b136.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="container">
+      <section class="main">
+        <div class="toggle">
+          <p id="lightenText" class="toggle-text">
+            <i class="fa-regular fa-sun"></i>
+          </p>
+          <div id="toggleBtn" class="toggle-btn">
+            <div class="inner-circle"></div>
+          </div>
+          <p id="darkenText" class="toggle-text unselected">
+            <i class="fa-solid fa-moon"></i>
+          </p>
+        </div>
+        <h1>Metric/Imperial Unit Conversion</h1>
+
+        <input type="text" id="inputText" class="input" />
+        <button class="convert-btn" id="convertBtn">Convert</button>
+      </section>
+      <section class="console">
+        <div>
+          <h3>Length (Meter/Feet)</h3>
+          <p>
+            <span id="metersStart"></span> meters =
+            <span id="feetResult"></span> feet |
+            <span id="feetStart"></span> feet =
+            <span id="metersResult"></span> meters
+          </p>
+        </div>
+        <div>
+          <h3>Volume (Liters/Gallons)</h3>
+          <p>
+            <span id="litersStart"></span> liters =
+            <span id="gallonsResult"></span> gallons |
+            <span id="gallonsStart"></span> gallons =
+            <span id="litersResult"></span> liters
+          </p>
+        </div>
+        <div>
+          <h3>Mass (Kilograms/Pounds)</h3>
+          <p>
+            <span id="kilosStart"></span> kilos =
+            <span id="poundsResult"></span> pounds |
+            <span id="poundsStart"></span> pounds =
+            <span id="kilosResult"></span> kilos
+          </p>
+        </div>
+      </section>
+    </div>
+    <footer>
+      This project was coded by
+      <strong>Olga Kahraman</strong> and
+      <a href="https://github.com/olgakahraman/unit-conversion" target="_blank"
+        >open-sourced on GitHub</a
+      >
+    </footer>
+
+    <script src="index.js"></script>
+  </body>
+</html>
